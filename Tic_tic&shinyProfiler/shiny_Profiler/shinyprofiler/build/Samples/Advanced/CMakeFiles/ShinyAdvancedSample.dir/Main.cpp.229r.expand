@@ -1,0 +1,1334 @@
+
+;; Function void ShinyNode_appendTicks(ShinyNode*, shinytick_t) (ShinyNode_appendTicks, funcdef_no=18, decl_uid=2955, cgraph_uid=17, symbol_order=17)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":100 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 a_elapsedTicks+0 S8 A64])
+        (reg:DI 4 si [ a_elapsedTicks ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":100 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 87 [ _1 ])
+        (mem:DI (plus:DI (reg/f:DI 89)
+                (const_int 8 [0x8])) [5 self_4(D)->_last.selfTicks+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 90)
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 a_elapsedTicks+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:DI 88 [ _2 ])
+                (plus:DI (reg:DI 87 [ _1 ])
+                    (reg:DI 90)))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (expr_list:REG_EQUAL (plus:DI (reg:DI 87 [ _1 ])
+            (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])) [5 a_elapsedTicks+0 S8 A64]))
+        (nil)))
+(insn 11 10 12 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (nil))
+(insn 12 11 15 2 (set (mem:DI (plus:DI (reg/f:DI 91)
+                (const_int 8 [0x8])) [5 self_4(D)->_last.selfTicks+0 S8 A64])
+        (reg:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":101 -1
+     (nil))
+(insn 15 12 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":102 -1
+     (nil))
+
+;; Function void ShinyNode_beginEntry(ShinyNode*) (ShinyNode_beginEntry, funcdef_no=19, decl_uid=2958, cgraph_uid=18, symbol_order=18)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":104 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":105 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 87 [ _1 ])
+        (mem:SI (reg/f:DI 89) [8 self_4(D)->_last.entryCount+0 S4 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":105 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:SI 88 [ _2 ])
+                (plus:SI (reg:SI 87 [ _1 ])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":105 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [4 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":105 -1
+     (nil))
+(insn 10 9 13 2 (set (mem:SI (reg/f:DI 90) [8 self_4(D)->_last.entryCount+0 S4 A64])
+        (reg:SI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":105 -1
+     (nil))
+(insn 13 10 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyNode.h":106 -1
+     (nil))
+
+;; Function void _ShinyManager_appendTicksToCurNode(ShinyManager*) (_ShinyManager_appendTicksToCurNode, funcdef_no=1007, decl_uid=24765, cgraph_uid=293, symbol_order=297)
+
+Partition 0: size 8 align 8
+	curTick
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [17 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":107 -1
+     (nil))
+(note 3 2 4 2 NOTE_INSN_FUNCTION_BEG)
+(insn 4 3 7 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [16 D.29375+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":107 -1
+     (nil))
+(insn 7 4 8 2 (parallel [
+            (set (reg:DI 92)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":109 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 92)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":109 -1
+     (nil))
+(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("ShinyGetTicks") [flags 0x41]  <function_decl 0x7f056a715300 ShinyGetTicks>) [0 ShinyGetTicks S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":109 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 87 [ curTick.0_1 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 curTick+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 88 [ _2 ])
+        (mem/j:DI (reg/f:DI 93) [0 self_8(D)->_lastTick+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 89 [ _3 ])
+                (minus:DI (reg:DI 87 [ curTick.0_1 ])
+                    (reg:DI 88 [ _2 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 90 [ _4 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 94)
+                (const_int 8 [0x8])) [0 self_8(D)->_curNode+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 4 si)
+        (reg:DI 89 [ _3 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 5 di)
+        (reg/f:DI 90 [ _4 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (nil))
+(call_insn 18 17 19 2 (call (mem:QI (symbol_ref:DI ("ShinyNode_appendTicks") [flags 0x3]  <function_decl 0x7f056a715e00 ShinyNode_appendTicks>) [0 ShinyNode_appendTicks S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":116 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 19 18 20 2 (set (reg:DI 91 [ curTick.1_5 ])
+        (mem/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [5 curTick+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":117 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":117 -1
+     (nil))
+(insn 21 20 31 2 (set (mem/j:DI (reg/f:DI 95) [0 self_8(D)->_lastTick+0 S8 A64])
+        (reg:DI 91 [ curTick.1_5 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":117 -1
+     (nil))
+(insn 31 21 23 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":118 -1
+     (nil))
+(insn 23 31 24 2 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [16 D.29375+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":118 -1
+     (nil))
+(jump_insn 24 23 29 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 27)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":118 -1
+     (nil)
+ -> 27)
+(note 29 24 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(call_insn 25 29 26 5 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f056978bc00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":118 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 26 25 27)
+(code_label 27 26 30 6 4 (nil) [1 uses])
+(note 30 27 0 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+
+;; Function void ShinyManager_beginNode(ShinyManager*, ShinyNode*) (ShinyManager_beginNode, funcdef_no=1015, decl_uid=24821, cgraph_uid=301, symbol_order=305)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":178 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 a_node+0 S8 A64])
+        (reg:DI 4 si [ a_node ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":178 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 a_node+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":182 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 87)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":182 -1
+     (nil))
+(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("ShinyNode_beginEntry") [flags 0x3]  <function_decl 0x7f056a71b000 ShinyNode_beginEntry>) [0 ShinyNode_beginEntry S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":182 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":184 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 88)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":184 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("_ShinyManager_appendTicksToCurNode") [flags 0x3]  <function_decl 0x7f0569815b00 _ShinyManager_appendTicksToCurNode>) [0 _ShinyManager_appendTicksToCurNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":184 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":185 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [4 a_node+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":185 -1
+     (nil))
+(insn 15 14 18 2 (set (mem/f/j:DI (plus:DI (reg/f:DI 89)
+                (const_int 8 [0x8])) [0 self_4(D)->_curNode+0 S8 A64])
+        (reg/f:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":185 -1
+     (nil))
+(insn 18 15 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":189 -1
+     (nil))
+
+;; Function void ShinyManager_lookupAndBeginNode(ShinyManager*, _ShinyNode**, ShinyZone*) (ShinyManager_lookupAndBeginNode, funcdef_no=1016, decl_uid=24826, cgraph_uid=302, symbol_order=306)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":191 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [10 a_cache+0 S8 A64])
+        (reg:DI 4 si [ a_cache ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":191 -1
+     (nil))
+(insn 4 3 5 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [9 a_zone+0 S8 A64])
+        (reg:DI 1 dx [ a_zone ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":191 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 87 [ _1 ])
+        (mem/j:SI (plus:DI (reg/f:DI 93)
+                (const_int 268 [0x10c])) [0 self_9(D)->_initialized+0 S4 A32])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ _1 ])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil)
+ -> 20)
+(note 12 11 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 4 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 14 13 15 4 (set (reg/f:DI 88 [ _2 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 94)
+                (const_int 8 [0x8])) [0 self_9(D)->_curNode+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 15 14 16 4 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [10 a_cache+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 16 15 17 4 (set (reg/f:DI 89 [ _3 ])
+        (mem/f:DI (reg/f:DI 95) [4 *a_cache_10(D)+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 17 16 18 4 (set (reg/f:DI 90 [ _4 ])
+        (mem/f:DI (plus:DI (reg/f:DI 89 [ _3 ])
+                (const_int 24 [0x18])) [4 _3->parent+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 88 [ _2 ])
+            (reg/f:DI 90 [ _4 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":199 -1
+     (nil)
+ -> 32)
+(code_label 20 19 21 5 7 (nil) [1 uses])
+(note 21 20 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 5 (set (reg:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -24 [0xffffffffffffffe8])) [9 a_zone+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 23 22 24 5 (set (reg:DI 97)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [10 a_cache+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DI 1 dx)
+        (reg:DI 96)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DI 4 si)
+        (reg:DI 97)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:DI 5 di)
+        (reg:DI 98)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(call_insn 28 27 29 5 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ShinyManager_lookupNode") [flags 0x41]  <function_decl 0x7f0569815d00 _ShinyManager_lookupNode>) [0 _ShinyManager_lookupNode S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(insn 29 28 30 5 (set (reg/f:DI 91 [ _5 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 30 29 31 5 (set (reg/f:DI 99)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [10 a_cache+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(insn 31 30 32 5 (set (mem/f:DI (reg/f:DI 99) [4 *a_cache_10(D)+0 S8 A64])
+        (reg/f:DI 91 [ _5 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":202 -1
+     (nil))
+(code_label 32 31 33 6 8 (nil) [1 uses])
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg/f:DI 100)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [10 a_cache+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil))
+(insn 35 34 36 6 (set (reg/f:DI 92 [ _6 ])
+        (mem/f:DI (reg/f:DI 100) [4 *a_cache_10(D)+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil))
+(insn 36 35 37 6 (set (reg:DI 101)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil))
+(insn 37 36 38 6 (set (reg:DI 4 si)
+        (reg/f:DI 92 [ _6 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil))
+(insn 38 37 39 6 (set (reg:DI 5 di)
+        (reg:DI 101)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil))
+(call_insn 39 38 42 6 (call (mem:QI (symbol_ref:DI ("ShinyManager_beginNode") [flags 0x3]  <function_decl 0x7f056982f500 ShinyManager_beginNode>) [0 ShinyManager_beginNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":208 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 42 39 0 6 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":213 -1
+     (nil))
+
+;; Function void ShinyManager_endCurNode(ShinyManager*) (ShinyManager_endCurNode, funcdef_no=1017, decl_uid=24829, cgraph_uid=303, symbol_order=307)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])
+        (reg:DI 5 di [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":215 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":223 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 89)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":223 -1
+     (nil))
+(call_insn 8 7 9 2 (call (mem:QI (symbol_ref:DI ("_ShinyManager_appendTicksToCurNode") [flags 0x3]  <function_decl 0x7f0569815b00 _ShinyManager_appendTicksToCurNode>) [0 _ShinyManager_appendTicksToCurNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":223 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":224 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 87 [ _1 ])
+        (mem/f/j:DI (plus:DI (reg/f:DI 90)
+                (const_int 8 [0x8])) [0 self_4(D)->_curNode+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":224 -1
+     (nil))
+(insn 11 10 12 2 (set (reg/f:DI 88 [ _2 ])
+        (mem/f:DI (plus:DI (reg/f:DI 87 [ _1 ])
+                (const_int 24 [0x18])) [4 _1->parent+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":224 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":224 -1
+     (nil))
+(insn 13 12 16 2 (set (mem/f/j:DI (plus:DI (reg/f:DI 91)
+                (const_int 8 [0x8])) [0 self_4(D)->_curNode+0 S8 A64])
+        (reg/f:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":224 -1
+     (nil))
+(insn 16 13 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":228 -1
+     (nil))
+
+;; Function ShinyEndNodeOnDestruction::ShinyEndNodeOnDestruction(ShinyManager*) (_ZN25ShinyEndNodeOnDestructionC2EP12ShinyManager, funcdef_no=1028, decl_uid=24928, cgraph_uid=312, symbol_order=316)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [18 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":332 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [17 self+0 S8 A64])
+        (reg:DI 4 si [ self ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":332 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg/f:DI 87)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [18 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":332 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [17 self+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":332 -1
+     (nil))
+(insn 9 8 12 2 (set (mem/f:DI (reg/f:DI 87) [17 this_2(D)->self_+0 S8 A64])
+        (reg/f:DI 88)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":332 -1
+     (nil))
+(insn 12 9 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":336 -1
+     (nil))
+
+;; Function ShinyEndNodeOnDestruction::~ShinyEndNodeOnDestruction() (_ZN25ShinyEndNodeOnDestructionD2Ev, funcdef_no=1031, decl_uid=24934, cgraph_uid=315, symbol_order=319)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [18 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":338 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [18 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":341 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:DI 87 [ _1 ])
+        (mem/f:DI (reg/f:DI 88) [17 this_3(D)->self_+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":341 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":341 -1
+     (nil))
+(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("ShinyManager_endCurNode") [flags 0x3]  <function_decl 0x7f056982f900 ShinyManager_endCurNode>) [0 ShinyManager_endCurNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":341 -1
+     (expr_list:REG_EH_REGION (const_int -1 [0xffffffffffffffff])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [18 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":342 -1
+     (nil))
+(insn 11 10 14 2 (set (mem/f:DI (reg/f:DI 89) [17 this_3(D)->self_+0 S8 A64])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":342 -1
+     (nil))
+(insn 14 11 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/include/ShinyManager.h":343 -1
+     (nil))
+
+;; Function void millisleep(unsigned int) (_Z10millisleepj, funcdef_no=1033, decl_uid=25614, cgraph_uid=317, symbol_order=321)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [8 milliseconds+0 S4 A32])
+        (reg:SI 5 di [ milliseconds ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":38 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 88)
+        (mem/c:SI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -4 [0xfffffffffffffffc])) [8 milliseconds+0 S4 A32])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":42 -1
+     (nil))
+(insn 7 6 8 2 (parallel [
+            (set (reg:SI 87 [ _1 ])
+                (mult:SI (reg:SI 88)
+                    (const_int 1000 [0x3e8])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":42 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 5 di)
+        (reg:SI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":42 -1
+     (nil))
+(call_insn 9 8 12 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("usleep") [flags 0x41]  <function_decl 0x7f056984e400 usleep>) [0 usleep S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":42 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 12 9 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":44 -1
+     (nil))
+
+;; Function ShinyManager& _ZTW14Shiny_instance() (_ZTW14Shiny_instance, funcdef_no=1499, decl_uid=25621, cgraph_uid=318, symbol_order=322)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 19.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 90)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref/i:DI ("_ZTH14Shiny_instance") [flags 0x41]  <function_decl 0x7f0569750b00 _ZTH14Shiny_instance>)
+                    ] UNSPEC_GOTPCREL)) [20  S8 A8])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:DI 89)
+        (reg:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (expr_list:REG_EQUAL (symbol_ref/i:DI ("_ZTH14Shiny_instance") [flags 0x41]  <function_decl 0x7f0569750b00 _ZTH14Shiny_instance>)
+        (nil)))
+(insn 7 6 8 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 89)
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(jump_insn 8 7 9 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 11)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil)
+ -> 11)
+(note 9 8 10 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(call_insn 10 9 11 4 (call (mem:QI (symbol_ref/i:DI ("_ZTH14Shiny_instance") [flags 0x41]  <function_decl 0x7f0569750b00 _ZTH14Shiny_instance>) [0 _ZTH14Shiny_instance S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil)
+    (nil))
+(code_label 11 10 12 5 14 (nil) [1 uses])
+(note 12 11 13 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 13 12 14 5 (set (reg:DI 91)
+        (unspec:DI [
+                (const_int 0 [0])
+            ] UNSPEC_TP)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 14 13 15 5 (set (reg:DI 92)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("Shiny_instance") [flags 0x60]  <var_decl 0x7f0569809990 Shiny_instance>)
+                    ] UNSPEC_GOTNTPOFF)) [20  S8 A8])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 15 14 18 5 (parallel [
+            (set (reg/f:DI 87 [ _4 ])
+                (plus:DI (reg:DI 91)
+                    (reg:DI 92)))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("Shiny_instance") [flags 0x60]  <var_decl 0x7f0569809990 Shiny_instance>)
+        (nil)))
+(insn 18 15 22 5 (set (reg/f:DI 88 [ <retval> ])
+        (reg/f:DI 87 [ _4 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 22 18 23 5 (set (reg/i:DI 0 ax)
+        (reg/f:DI 88 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 23 22 0 5 (use (reg/i:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+
+;; Function void YetMoreMath() (_Z11YetMoreMathv, funcdef_no=1034, decl_uid=25618, cgraph_uid=319, symbol_order=324)
+
+Partition 0: size 8 align 8
+	__ShinyBlock
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_FUNCTION_BEG)
+(insn 3 2 6 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [16 D.29378+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":49 -1
+     (nil))
+(call_insn 6 3 7 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil)
+    (nil))
+(insn 7 6 8 2 (set (reg/f:DI 87 [ _1 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionC1EP12ShinyManager") [flags 0x3]  <function_decl 0x7f0569840800 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(call_insn 12 11 43 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EH_REGION (const_int 2 [0x2])
+        (nil))
+    (nil))
+(note 43 12 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 43 15 4 (set (reg/f:DI 88 [ _2 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 15 13 16 4 (set (reg:DI 92)
+        (unspec:DI [
+                (const_int 0 [0])
+            ] UNSPEC_TP)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 16 15 17 4 (parallel [
+            (set (reg/f:DI 91)
+                (plus:DI (reg:DI 92)
+                    (const:DI (unspec:DI [
+                                (symbol_ref:DI ("_ZZ11YetMoreMathvE5cache") [flags 0x2a]  <var_decl 0x7f0569847b40 cache>)
+                            ] UNSPEC_NTPOFF))))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZZ11YetMoreMathvE5cache") [flags 0x2a]  <var_decl 0x7f0569847b40 cache>)
+        (nil)))
+(insn 17 16 18 4 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("Math__ShinyZoneShared") [flags 0x40]  <var_decl 0x7f0569847870 Math__ShinyZoneShared>)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 4 si)
+        (reg/f:DI 91)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(call_insn 20 19 21 4 (call (mem:QI (symbol_ref:DI ("ShinyManager_lookupAndBeginNode") [flags 0x3]  <function_decl 0x7f056982f700 ShinyManager_lookupAndBeginNode>) [0 ShinyManager_lookupAndBeginNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EH_REGION (const_int 2 [0x2])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(note 21 20 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 6 (parallel [
+            (set (reg:DI 93)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:DI 5 di)
+        (reg:DI 93)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(call_insn 24 23 25 6 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionD1Ev") [flags 0x3]  <function_decl 0x7f0569840a00 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 25 24 26 6 (set (pc)
+        (label_ref 36)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":53 -1
+     (nil)
+ -> 36)
+(barrier 26 25 46)
+(code_label/s 46 26 48 7 19 (nil) [1 uses])
+(note 48 46 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 48 29 7 (set (reg:DI 95)
+        (reg:DI 0 ax)) -1
+     (nil))
+(insn 29 47 30 7 (parallel [
+            (set (reg:DI 94)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:DI 5 di)
+        (reg:DI 94)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (nil))
+(call_insn 31 30 32 7 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionD1Ev") [flags 0x3]  <function_decl 0x7f0569840a00 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":50 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 32 31 33 7 (set (reg/f:DI 89 [ D.29377 ])
+        (reg:DI 95)) -1
+     (nil))
+(insn 33 32 34 7 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.29377 ])) -1
+     (nil))
+(call_insn 34 33 35 7 (call (mem:QI (symbol_ref:DI ("_Unwind_Resume") [flags 0x41]  <function_decl 0x7f056a9b9100 __builtin_unwind_resume>) [0 __builtin_unwind_resume S1 A8])
+        (const_int 0 [0])) -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 35 34 36)
+(code_label 36 35 42 9 16 (nil) [1 uses])
+(note 42 36 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 42 38 9 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [16 D.29378+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":53 -1
+     (nil))
+(jump_insn 38 37 44 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":53 -1
+     (nil)
+ -> 41)
+(note 44 38 39 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 39 44 40 10 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f056978bc00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":53 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 40 39 41)
+(code_label 41 40 45 11 18 (nil) [1 uses])
+(note 45 41 0 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+
+;; Function void YetAnotherMath() (_Z14YetAnotherMathv, funcdef_no=1035, decl_uid=25634, cgraph_uid=320, symbol_order=326)
+
+Partition 0: size 8 align 8
+	__ShinyBlock
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 8 into block 7...
+Merged blocks 7 and 8.
+Merged 7 and 8 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_FUNCTION_BEG)
+(insn 3 2 6 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [16 D.29380+0 S8 A64])
+                (unspec:DI [
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":56 -1
+     (nil))
+(call_insn 6 3 7 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil)
+    (nil))
+(insn 7 6 8 2 (set (reg/f:DI 87 [ _1 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 8 7 9 2 (parallel [
+            (set (reg:DI 90)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 4 si)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionC1EP12ShinyManager") [flags 0x3]  <function_decl 0x7f0569840800 __comp_ctor >) [0 __comp_ctor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(call_insn 12 11 43 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EH_REGION (const_int 2 [0x2])
+        (nil))
+    (nil))
+(note 43 12 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 43 15 4 (set (reg/f:DI 88 [ _2 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 15 13 16 4 (set (reg:DI 92)
+        (unspec:DI [
+                (const_int 0 [0])
+            ] UNSPEC_TP)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 16 15 17 4 (parallel [
+            (set (reg/f:DI 91)
+                (plus:DI (reg:DI 92)
+                    (const:DI (unspec:DI [
+                                (symbol_ref:DI ("_ZZ14YetAnotherMathvE5cache") [flags 0x2a]  <var_decl 0x7f0569847d80 cache>)
+                            ] UNSPEC_NTPOFF))))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZZ14YetAnotherMathvE5cache") [flags 0x2a]  <var_decl 0x7f0569847d80 cache>)
+        (nil)))
+(insn 17 16 18 4 (set (reg:DI 1 dx)
+        (symbol_ref:DI ("Math__ShinyZoneShared") [flags 0x40]  <var_decl 0x7f0569847870 Math__ShinyZoneShared>)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 18 17 19 4 (set (reg:DI 4 si)
+        (reg/f:DI 91)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(call_insn 20 19 21 4 (call (mem:QI (symbol_ref:DI ("ShinyManager_lookupAndBeginNode") [flags 0x3]  <function_decl 0x7f056982f700 ShinyManager_lookupAndBeginNode>) [0 ShinyManager_lookupAndBeginNode S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EH_REGION (const_int 2 [0x2])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(note 21 20 22 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 6 (parallel [
+            (set (reg:DI 93)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 23 22 24 6 (set (reg:DI 5 di)
+        (reg:DI 93)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(call_insn 24 23 25 6 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionD1Ev") [flags 0x3]  <function_decl 0x7f0569840a00 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(jump_insn 25 24 26 6 (set (pc)
+        (label_ref 36)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":60 -1
+     (nil)
+ -> 36)
+(barrier 26 25 46)
+(code_label/s 46 26 48 7 24 (nil) [1 uses])
+(note 48 46 47 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 47 48 29 7 (set (reg:DI 95)
+        (reg:DI 0 ax)) -1
+     (nil))
+(insn 29 47 30 7 (parallel [
+            (set (reg:DI 94)
+                (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -16 [0xfffffffffffffff0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(insn 30 29 31 7 (set (reg:DI 5 di)
+        (reg:DI 94)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (nil))
+(call_insn 31 30 32 7 (call (mem:QI (symbol_ref/i:DI ("_ZN25ShinyEndNodeOnDestructionD1Ev") [flags 0x3]  <function_decl 0x7f0569840a00 __comp_dtor >) [0 __comp_dtor  S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":57 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 32 31 33 7 (set (reg/f:DI 89 [ D.29379 ])
+        (reg:DI 95)) -1
+     (nil))
+(insn 33 32 34 7 (set (reg:DI 5 di)
+        (reg/f:DI 89 [ D.29379 ])) -1
+     (nil))
+(call_insn 34 33 35 7 (call (mem:QI (symbol_ref:DI ("_Unwind_Resume") [flags 0x41]  <function_decl 0x7f056a9b9100 __builtin_unwind_resume>) [0 __builtin_unwind_resume S1 A8])
+        (const_int 0 [0])) -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 35 34 36)
+(code_label 36 35 42 9 21 (nil) [1 uses])
+(note 42 36 37 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 37 42 38 9 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [16 D.29380+0 S8 A64])
+                        (const_int 40 [0x28])
+                    ] UNSPEC_SP_TLS_TEST))
+            (clobber (scratch:DI))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":60 -1
+     (nil))
+(jump_insn 38 37 44 9 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 41)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":60 -1
+     (nil)
+ -> 41)
+(note 44 38 39 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(call_insn 39 44 40 10 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f056978bc00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":60 -1
+     (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+        (expr_list:REG_NORETURN (const_int 0 [0])
+            (expr_list:REG_EH_REGION (const_int 0 [0])
+                (nil))))
+    (nil))
+(barrier 40 39 41)
+(code_label 41 40 45 11 23 (nil) [1 uses])
+(note 45 41 0 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+
+;; Function int main() (main, funcdef_no=1036, decl_uid=25640, cgraph_uid=321, symbol_order=327)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 26.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(call_insn 5 2 6 2 (call (mem:QI (symbol_ref:DI ("_Z10DoSomeMathv") [flags 0x41]  <function_decl 0x7f056987aa00 DoSomeMath>) [0 DoSomeMath S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":67 -1
+     (nil)
+    (nil))
+(call_insn 6 5 7 2 (call (mem:QI (symbol_ref:DI ("_Z11YetMoreMathv") [flags 0x3]  <function_decl 0x7f056987ae00 YetMoreMath>) [0 YetMoreMath S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":68 -1
+     (nil)
+    (nil))
+(call_insn 7 6 8 2 (call (mem:QI (symbol_ref:DI ("_Z14YetAnotherMathv") [flags 0x3]  <function_decl 0x7f0569880600 YetAnotherMath>) [0 YetAnotherMath S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":69 -1
+     (nil)
+    (nil))
+(insn 8 7 9 2 (set (reg:SI 5 di)
+        (const_int 12 [0xc])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":70 -1
+     (nil))
+(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("_Z9Recursioni") [flags 0x41]  <function_decl 0x7f056987ab00 Recursion>) [0 Recursion S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":70 -1
+     (nil)
+    (expr_list:SI (use (reg:SI 5 di))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7f05693b0990 *.LC0>)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":75 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:DI ("_Z14ExecuteCommandPKc") [flags 0x41]  <function_decl 0x7f056987ac00 ExecuteCommand>) [0 ExecuteCommand S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":75 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":78 -1
+     (nil)
+    (nil))
+(insn 13 12 14 2 (set (reg/f:DI 87 [ _1 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":78 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":78 -1
+     (nil))
+(call_insn 15 14 16 2 (call (mem:QI (symbol_ref:DI ("ShinyManager_update") [flags 0x41]  <function_decl 0x7f056982fd00 ShinyManager_update>) [0 ShinyManager_update S1 A8])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":78 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(call_insn 16 15 17 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref/i:DI ("_ZTW14Shiny_instance") [flags 0x3]  <function_decl 0x7f0569880100 _ZTW14Shiny_instance>) [0 _ZTW14Shiny_instance S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil)
+    (nil))
+(insn 17 16 18 2 (set (reg/f:DI 88 [ _2 ])
+        (reg:DI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 1 dx)
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil))
+(call_insn 21 20 22 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("ShinyManager_output") [flags 0x41]  <function_decl 0x7f0569834300 ShinyManager_output>) [0 ShinyManager_output S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":79 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:SI (use (reg:SI 1 dx))
+                (nil)))))
+(insn 22 21 25 2 (set (reg:SI 89 [ _15 ])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":84 -1
+     (nil))
+(insn 25 22 29 2 (set (reg:SI 90 [ <retval> ])
+        (reg:SI 89 [ _15 ])) -1
+     (nil))
+(insn 29 25 30 2 (set (reg/i:SI 0 ax)
+        (reg:SI 90 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))
+(insn 30 29 0 2 (use (reg/i:SI 0 ax)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/Samples/Advanced/Main.cpp":85 -1
+     (nil))

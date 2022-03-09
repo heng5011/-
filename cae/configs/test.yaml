@@ -1,0 +1,10 @@
+#checkpoint: F:\\我的大学\\实习\\实习项目\\深度图压缩\\model_yt_small_final.state
+checkpoint: F:\\我的大学\\实习\\实习项目\\深度图压缩\\code\\cae-master\\experiments\\training2\\model_final.pth
+exp_name: testing22
+batch_every: 100
+shuffle: false
+#dataset_path: /home/alex/workspace/ml-data/cae/datasets/testing2
+#dataset_path: F:\\我的大学\\实习\\实习项目\\深度图压缩\\code\\Dataset\\深度图参考数据\\500mm_复杂物体
+dataset_path: F:\\我的大学\\实习\\实习项目\\深度图压缩\\code\\Dataset\\test
+num_workers: 1
+device: cuda

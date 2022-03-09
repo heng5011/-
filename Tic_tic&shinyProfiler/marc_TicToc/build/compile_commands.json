@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/orb3slam_devep1/guest2/marc_TicToc/build",
+  "command": "/usr/bin/c++   -I/home/orb3slam_devep1/guest2/marc_TicToc/Marc-TicToc -I/home/orb3slam_devep1/guest2/marc_TicToc/include  -g   -std=gnu++14 -o CMakeFiles/Marc-TicToc.dir/examples1/frs_test.cpp.o -c /home/orb3slam_devep1/guest2/marc_TicToc/examples1/frs_test.cpp",
+  "file": "/home/orb3slam_devep1/guest2/marc_TicToc/examples1/frs_test.cpp"
+},
+{
+  "directory": "/home/orb3slam_devep1/guest2/marc_TicToc/build",
+  "command": "/usr/bin/c++   -I/home/orb3slam_devep1/guest2/marc_TicToc/Marc-TicToc -I/home/orb3slam_devep1/guest2/marc_TicToc/include  -g   -std=gnu++14 -o CMakeFiles/Marc-TicToc.dir/src/tictoc.cpp.o -c /home/orb3slam_devep1/guest2/marc_TicToc/src/tictoc.cpp",
+  "file": "/home/orb3slam_devep1/guest2/marc_TicToc/src/tictoc.cpp"
+},
+{
+  "directory": "/home/orb3slam_devep1/guest2/marc_TicToc/build",
+  "command": "/usr/bin/c++   -I/home/orb3slam_devep1/guest2/marc_TicToc/Marc-TicToc -I/home/orb3slam_devep1/guest2/marc_TicToc/include  -g   -std=gnu++14 -o CMakeFiles/Marc-TicToc.dir/src/Timer.cpp.o -c /home/orb3slam_devep1/guest2/marc_TicToc/src/Timer.cpp",
+  "file": "/home/orb3slam_devep1/guest2/marc_TicToc/src/Timer.cpp"
+}
+]

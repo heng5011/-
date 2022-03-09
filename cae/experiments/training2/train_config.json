@@ -1,0 +1,16 @@
+{
+    "num_epochs": 1,
+    "batch_size": 8,
+    "learning_rate": 0.0001,
+    "resume": false,
+    "checkpoint": null,
+    "start_epoch": 1,
+    "exp_name": "training2",
+    "batch_every": 1,
+    "save_every": 10,
+    "epoch_every": 1,
+    "shuffle": true,
+    "dataset_path": "F:/\u6211\u7684\u5927\u5b66/\u5b9e\u4e60/\u5b9e\u4e60\u9879\u76ee/\u6df1\u5ea6\u56fe\u538b\u7f29/code/Dataset/yt_small_720p",
+    "num_workers": 2,
+    "device": "cuda"
+}

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ShinyMainLoopSample.dir/MainLoop.cpp.o  -o ../../bin/ShinyMainLoopSample ../../lib/libShiny-static.a 

@@ -1,0 +1,684 @@
+
+;; Function Timer::Timer() (_ZN5TimerC2Ev, funcdef_no=15, decl_uid=2430, cgraph_uid=15, symbol_order=15)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":21 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 7 6 8 2 (set (mem:DI (plus:DI (reg/f:DI 89)
+                (const_int 32 [0x20])) [6 this_4(D)->startCount.tv_usec+0 S8 A64])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 87 [ _1 ])
+        (mem:DI (plus:DI (reg/f:DI 90)
+                (const_int 32 [0x20])) [6 this_4(D)->startCount.tv_usec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 91)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:DI (plus:DI (reg/f:DI 91)
+                (const_int 24 [0x18])) [6 this_4(D)->startCount.tv_sec+0 S8 A64])
+        (reg:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":28 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:DI 92)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 13 12 14 2 (set (mem:DI (plus:DI (reg/f:DI 92)
+                (const_int 48 [0x30])) [6 this_4(D)->endCount.tv_usec+0 S8 A64])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 93)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:DI 88 [ _2 ])
+        (mem:DI (plus:DI (reg/f:DI 93)
+                (const_int 48 [0x30])) [6 this_4(D)->endCount.tv_usec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:DI 94)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 17 16 18 2 (set (mem:DI (plus:DI (reg/f:DI 94)
+                (const_int 40 [0x28])) [6 this_4(D)->endCount.tv_sec+0 S8 A64])
+        (reg:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":29 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/f:DI 95)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":32 -1
+     (nil))
+(insn 19 18 20 2 (set (mem:SI (plus:DI (reg/f:DI 95)
+                (const_int 16 [0x10])) [4 this_4(D)->stopped+0 S4 A64])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":32 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:DI 96)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":33 -1
+     (nil))
+(insn 21 20 22 2 (set (reg:DF 97)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":33 -1
+     (nil))
+(insn 22 21 23 2 (set (mem:DF (reg/f:DI 96) [3 this_4(D)->startTimeInMicroSec+0 S8 A64])
+        (reg:DF 97)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":33 -1
+     (nil))
+(insn 23 22 24 2 (set (reg/f:DI 98)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":34 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DF 99)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":34 -1
+     (nil))
+(insn 25 24 28 2 (set (mem:DF (plus:DI (reg/f:DI 98)
+                (const_int 8 [0x8])) [3 this_4(D)->endTimeInMicroSec+0 S8 A64])
+        (reg:DF 99)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":34 -1
+     (nil))
+(insn 28 25 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":35 -1
+     (nil))
+
+;; Function Timer::~Timer() (_ZN5TimerD2Ev, funcdef_no=18, decl_uid=2435, cgraph_uid=18, symbol_order=18)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":42 -1
+     (nil))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 3 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":44 -1
+     (nil))
+
+;; Function void Timer::start() (_ZN5Timer5startEv, funcdef_no=20, decl_uid=2411, cgraph_uid=20, symbol_order=20)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":53 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":54 -1
+     (nil))
+(insn 7 6 8 2 (set (mem:SI (plus:DI (reg/f:DI 88)
+                (const_int 16 [0x10])) [4 this_3(D)->stopped+0 S4 A64])
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":54 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":58 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:DI 87 [ _1 ])
+                (plus:DI (reg/f:DI 89)
+                    (const_int 24 [0x18])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":58 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+            (const_int 24 [0x18]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":58 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":58 -1
+     (nil))
+(call_insn 12 11 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("gettimeofday") [flags 0x41]  <function_decl 0x7eff39fcb400 gettimeofday>) [0 gettimeofday S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":58 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 15 12 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":60 -1
+     (nil))
+
+;; Function void Timer::stop() (_ZN5Timer4stopEv, funcdef_no=21, decl_uid=2413, cgraph_uid=21, symbol_order=21)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":69 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 88)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":70 -1
+     (nil))
+(insn 7 6 8 2 (set (mem:SI (plus:DI (reg/f:DI 88)
+                (const_int 16 [0x10])) [4 this_3(D)->stopped+0 S4 A64])
+        (const_int 1 [0x1])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":70 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":75 -1
+     (nil))
+(insn 9 8 10 2 (parallel [
+            (set (reg/f:DI 87 [ _1 ])
+                (plus:DI (reg/f:DI 89)
+                    (const_int 40 [0x28])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":75 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+            (const_int 40 [0x28]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":75 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg/f:DI 87 [ _1 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":75 -1
+     (nil))
+(call_insn 12 11 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("gettimeofday") [flags 0x41]  <function_decl 0x7eff39fcb400 gettimeofday>) [0 gettimeofday S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":75 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 15 12 0 2 (const_int 0 [0]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":77 -1
+     (nil))
+
+;; Function double Timer::getElapsedTimeInMicroSec() (_ZN5Timer24getElapsedTimeInMicroSecEv, funcdef_no=22, decl_uid=2421, cgraph_uid=22, symbol_order=22)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 48.
+Merging block 7 into block 5...
+Merged blocks 5 and 7.
+Merged 5 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":86 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:DI 105)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":94 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 87 [ _1 ])
+        (mem:SI (plus:DI (reg/f:DI 105)
+                (const_int 16 [0x10])) [4 this_19(D)->stopped+0 S4 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":94 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 87 [ _1 ])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":94 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":94 -1
+     (nil)
+ -> 16)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 4 (set (reg/f:DI 106)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":95 -1
+     (nil))
+(insn 12 11 13 4 (parallel [
+            (set (reg/f:DI 88 [ _2 ])
+                (plus:DI (reg/f:DI 106)
+                    (const_int 40 [0x28])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":95 -1
+     (expr_list:REG_EQUAL (plus:DI (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                    (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+            (const_int 40 [0x28]))
+        (nil)))
+(insn 13 12 14 4 (set (reg:DI 4 si)
+        (const_int 0 [0])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":95 -1
+     (nil))
+(insn 14 13 15 4 (set (reg:DI 5 di)
+        (reg/f:DI 88 [ _2 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":95 -1
+     (nil))
+(call_insn 15 14 16 4 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("gettimeofday") [flags 0x41]  <function_decl 0x7eff39fcb400 gettimeofday>) [0 gettimeofday S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":95 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(code_label 16 15 17 5 6 (nil) [1 uses])
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg/f:DI 107)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 19 18 20 5 (set (reg:DI 89 [ _3 ])
+        (mem:DI (plus:DI (reg/f:DI 107)
+                (const_int 24 [0x18])) [6 this_19(D)->startCount.tv_sec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 20 19 21 5 (set (reg:DF 90 [ _4 ])
+        (float:DF (reg:DI 89 [ _3 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 21 20 22 5 (set (reg:DF 108)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC1") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (expr_list:REG_EQUAL (const_double:DF 1.0e+6 [0x0.f424p+20])
+        (nil)))
+(insn 22 21 23 5 (set (reg:DF 91 [ _5 ])
+        (mult:DF (reg:DF 90 [ _4 ])
+            (reg:DF 108))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/f:DI 109)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 24 23 25 5 (set (reg:DI 92 [ _6 ])
+        (mem:DI (plus:DI (reg/f:DI 109)
+                (const_int 32 [0x20])) [6 this_19(D)->startCount.tv_usec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:DF 93 [ _7 ])
+        (float:DF (reg:DI 92 [ _6 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:DF 94 [ _8 ])
+        (plus:DF (reg:DF 91 [ _5 ])
+            (reg:DF 93 [ _7 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 27 26 28 5 (set (reg/f:DI 110)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 28 27 29 5 (set (mem:DF (reg/f:DI 110) [3 this_19(D)->startTimeInMicroSec+0 S8 A64])
+        (reg:DF 94 [ _8 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":97 -1
+     (nil))
+(insn 29 28 30 5 (set (reg/f:DI 111)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 30 29 31 5 (set (reg:DI 95 [ _9 ])
+        (mem:DI (plus:DI (reg/f:DI 111)
+                (const_int 40 [0x28])) [6 this_19(D)->endCount.tv_sec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:DF 96 [ _10 ])
+        (float:DF (reg:DI 95 [ _9 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:DF 112)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC1") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (expr_list:REG_EQUAL (const_double:DF 1.0e+6 [0x0.f424p+20])
+        (nil)))
+(insn 33 32 34 5 (set (reg:DF 97 [ _11 ])
+        (mult:DF (reg:DF 96 [ _10 ])
+            (reg:DF 112))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 34 33 35 5 (set (reg/f:DI 113)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:DI 98 [ _12 ])
+        (mem:DI (plus:DI (reg/f:DI 113)
+                (const_int 48 [0x30])) [6 this_19(D)->endCount.tv_usec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:DF 99 [ _13 ])
+        (float:DF (reg:DI 98 [ _12 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 37 36 38 5 (set (reg:DF 100 [ _14 ])
+        (plus:DF (reg:DF 97 [ _11 ])
+            (reg:DF 99 [ _13 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 38 37 39 5 (set (reg/f:DI 114)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 39 38 40 5 (set (mem:DF (plus:DI (reg/f:DI 114)
+                (const_int 8 [0x8])) [3 this_19(D)->endTimeInMicroSec+0 S8 A64])
+        (reg:DF 100 [ _14 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":98 -1
+     (nil))
+(insn 40 39 41 5 (set (reg/f:DI 115)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 41 40 42 5 (set (reg:DF 101 [ _15 ])
+        (mem:DF (plus:DI (reg/f:DI 115)
+                (const_int 8 [0x8])) [3 this_19(D)->endTimeInMicroSec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 42 41 43 5 (set (reg/f:DI 116)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 43 42 44 5 (set (reg:DF 102 [ _16 ])
+        (mem:DF (reg/f:DI 116) [3 this_19(D)->startTimeInMicroSec+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 44 43 47 5 (set (reg:DF 103 [ _23 ])
+        (minus:DF (reg:DF 101 [ _15 ])
+            (reg:DF 102 [ _16 ]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 47 44 51 5 (set (reg:DF 104 [ <retval> ])
+        (reg:DF 103 [ _23 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":101 -1
+     (nil))
+(insn 51 47 52 5 (set (reg/i:DF 21 xmm0)
+        (reg:DF 104 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":102 -1
+     (nil))
+(insn 52 51 0 5 (use (reg/i:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":102 -1
+     (nil))
+
+;; Function double Timer::getElapsedTimeInMilliSec() (_ZN5Timer24getElapsedTimeInMilliSecEv, funcdef_no=23, decl_uid=2419, cgraph_uid=23, symbol_order=23)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 15.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":110 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:DF 21 xmm0)
+        (call (mem:QI (symbol_ref:DI ("_ZN5Timer24getElapsedTimeInMicroSecEv") [flags 0x3]  <function_decl 0x7eff39fe9400 getElapsedTimeInMicroSec>) [0 getElapsedTimeInMicroSec S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DF 87 [ _1 ])
+        (reg:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DF 91)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC2") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (expr_list:REG_EQUAL (const_double:DF 1.0000000000000000208166817117216851329430937767028809e-3 [0x0.83126e978d4fep-9])
+        (nil)))
+(insn 11 10 14 2 (set (reg:DF 88 [ _5 ])
+        (mult:DF (reg:DF 87 [ _1 ])
+            (reg:DF 91))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (nil))
+(insn 14 11 18 2 (set (reg:DF 89 [ <retval> ])
+        (reg:DF 88 [ _5 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":111 -1
+     (nil))
+(insn 18 14 19 2 (set (reg/i:DF 21 xmm0)
+        (reg:DF 89 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":112 -1
+     (nil))
+(insn 19 18 0 2 (use (reg/i:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":112 -1
+     (nil))
+
+;; Function double Timer::getElapsedTimeInSec() (_ZN5Timer19getElapsedTimeInSecEv, funcdef_no=24, decl_uid=2417, cgraph_uid=24, symbol_order=24)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 15.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":120 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 90)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 90)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:DF 21 xmm0)
+        (call (mem:QI (symbol_ref:DI ("_ZN5Timer24getElapsedTimeInMicroSecEv") [flags 0x3]  <function_decl 0x7eff39fe9400 getElapsedTimeInMicroSec>) [0 getElapsedTimeInMicroSec S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 10 2 (set (reg:DF 87 [ _1 ])
+        (reg:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DF 91)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC3") [flags 0x2]) [3  S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (expr_list:REG_EQUAL (const_double:DF 9.9999999999999995474811182588625868561393872369080782e-7 [0x0.8637bd05af6c68p-19])
+        (nil)))
+(insn 11 10 14 2 (set (reg:DF 88 [ _5 ])
+        (mult:DF (reg:DF 87 [ _1 ])
+            (reg:DF 91))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (nil))
+(insn 14 11 18 2 (set (reg:DF 89 [ <retval> ])
+        (reg:DF 88 [ _5 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":121 -1
+     (nil))
+(insn 18 14 19 2 (set (reg/i:DF 21 xmm0)
+        (reg:DF 89 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":122 -1
+     (nil))
+(insn 19 18 0 2 (use (reg/i:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":122 -1
+     (nil))
+
+;; Function double Timer::getElapsedTime() (_ZN5Timer14getElapsedTimeEv, funcdef_no=25, decl_uid=2415, cgraph_uid=25, symbol_order=25)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 13.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])
+        (reg:DI 5 di [ this ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":130 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DI 89)
+        (mem/f/c:DI (plus:DI (reg/f:DI 82 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 this+0 S8 A64])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":131 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 5 di)
+        (reg:DI 89)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":131 -1
+     (nil))
+(call_insn 8 7 9 2 (set (reg:DF 21 xmm0)
+        (call (mem:QI (symbol_ref:DI ("_ZN5Timer19getElapsedTimeInSecEv") [flags 0x3]  <function_decl 0x7eff39fe9200 getElapsedTimeInSec>) [0 getElapsedTimeInSec S1 A8])
+            (const_int 0 [0]))) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":131 -1
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 9 8 12 2 (set (reg:DF 87 [ _4 ])
+        (reg:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":131 -1
+     (nil))
+(insn 12 9 16 2 (set (reg:DF 88 [ <retval> ])
+        (reg:DF 87 [ _4 ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":131 -1
+     (nil))
+(insn 16 12 17 2 (set (reg/i:DF 21 xmm0)
+        (reg:DF 88 [ <retval> ])) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":132 -1
+     (nil))
+(insn 17 16 0 2 (use (reg/i:DF 21 xmm0)) "/home/orb3slam_devep1/guest2/shiny_Profiler/shinyprofiler/src/Timer.cpp":132 -1
+     (nil))

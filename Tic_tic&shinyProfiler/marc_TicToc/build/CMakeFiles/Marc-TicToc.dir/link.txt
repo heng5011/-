@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Marc-TicToc.dir/examples1/frs_test.cpp.o CMakeFiles/Marc-TicToc.dir/src/tictoc.cpp.o CMakeFiles/Marc-TicToc.dir/src/Timer.cpp.o  -o Marc-TicToc -lpthread 

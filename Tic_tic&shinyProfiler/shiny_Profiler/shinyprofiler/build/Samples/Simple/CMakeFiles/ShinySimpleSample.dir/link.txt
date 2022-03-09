@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ShinySimpleSample.dir/Simple.cpp.o  -o ../../bin/ShinySimpleSample ../../lib/libShiny-static.a 

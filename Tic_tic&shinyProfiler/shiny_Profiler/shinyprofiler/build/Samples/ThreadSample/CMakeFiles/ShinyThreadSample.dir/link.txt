@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ShinyThreadSample.dir/ThreadSample.cpp.o  -o ../../bin/ShinyThreadSample ../../lib/libShiny-static.a -lpthread 

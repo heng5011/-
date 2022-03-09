@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libShiny-static.a  CMakeFiles/Shiny.dir/src/ShinyManager.cpp.o CMakeFiles/Shiny.dir/src/ShinyNode.cpp.o CMakeFiles/Shiny.dir/src/ShinyNodePool.c.o CMakeFiles/Shiny.dir/src/ShinyNodeState.c.o CMakeFiles/Shiny.dir/src/ShinyOutput.cpp.o CMakeFiles/Shiny.dir/src/ShinyTools.cpp.o CMakeFiles/Shiny.dir/src/ShinyZone.c.o
+/usr/bin/ranlib lib/libShiny-static.a

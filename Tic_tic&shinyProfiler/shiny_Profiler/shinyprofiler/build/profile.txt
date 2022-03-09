@@ -1,0 +1,28 @@
+sorted list (Thread 'Worker Thread #1' 0x7fdd20dcc700)                                       calls            self time           total time
+<unprofiled>                                                                                   1.0    100.25 ms   20.0%    600.38 ms  120.0%
+void sample::thread_helper()                                                                   1.0    500.14 ms  100.0%    500.14 ms  100.0%
+
+call tree (Thread 'Worker Thread #1' 0x7fdd20dcc700)                                         calls            self time           total time
+<unprofiled>                                                                                   1.0    100.25 ms   20.0%    600.38 ms  120.0%
+  void sample::thread_helper()                                                                 1.0    500.14 ms  100.0%    500.14 ms  100.0%
+
+sorted list (Thread 'Worker Thread #2' 0x7fdd205cb700)                                       calls            self time           total time
+<unprofiled>                                                                                   1.0    200.20 ms   40.0%    700.34 ms  140.0%
+void sample::thread_helper()                                                                   1.0    500.14 ms  100.0%    500.14 ms  100.0%
+
+call tree (Thread 'Worker Thread #2' 0x7fdd205cb700)                                         calls            self time           total time
+<unprofiled>                                                                                   1.0    200.20 ms   40.0%    700.34 ms  140.0%
+  void sample::thread_helper()                                                                 1.0    500.14 ms  100.0%    500.14 ms  100.0%
+
+sorted list (Thread 'main' 0x7fdd21f2ea40)                                                   calls            self time           total time
+<unprofiled>                                                                                   1.0     52.00 us    0.0%    700.88 ms  100.0%
+void start_threads()                                                                           1.0    500.56 ms   71.4%    700.83 ms  100.0%
+void sample::MainFunc2()                                                                       1.0    100.15 ms   14.3%    100.15 ms   14.3%
+void sample::MainFunc1()                                                                       1.0    100.12 ms   14.3%    100.12 ms   14.3%
+
+call tree (Thread 'main' 0x7fdd21f2ea40)                                                     calls            self time           total time
+<unprofiled>                                                                                   1.0     52.00 us    0.0%    700.88 ms  100.0%
+  void start_threads()                                                                         1.0    500.56 ms   71.4%    700.83 ms  100.0%
+    void sample::MainFunc1()                                                                   1.0    100.12 ms   14.3%    100.12 ms   14.3%
+    void sample::MainFunc2()                                                                   1.0    100.15 ms   14.3%    100.15 ms   14.3%
+
